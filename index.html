@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRIDRIX — Современное портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FRIDRIX</a>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">Работы</a>
+                <a href="about.html" class="nav-link">О себе</a>
+                <a href="pricing.html" class="nav-link">Услуги</a>
+                <a href="index.html#contact" class="nav-link">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="#work" class="mobile-nav-item">
+            <img src="img/Portfolio.png" alt="Работы" class="mobile-nav-icon">
+            <span class="mobile-nav-label">Работы</span>
+        </a>
+        <a href="#about" class="mobile-nav-item">
+            <img src="img/Aboutme.png" alt="О себе" class="mobile-nav-icon">
+            <span class="mobile-nav-label">О себе</span>
+        </a>
+        <a href="#pricing" class="mobile-nav-item">
+            <img src="img/Price.png" alt="Услуги" class="mobile-nav-icon">
+            <span class="mobile-nav-label">Услуги</span>
+        </a>
+        <a href="#contact" class="mobile-nav-item">
+            <img src="img/Contact.png" alt="Контакты" class="mobile-nav-icon">
+            <span class="mobile-nav-label">Контакты</span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-main">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="line">Графический</span>
+                        <span class="line">дизайнер</span>
+                        <span class="line">и разработчик</span>
+                    </h1>
+                    <p class="hero-subtitle">Создаю цифровые продукты и музыку</p>
+                </div>
+                <div class="hero-mascot">
+                    <div class="mascot-text">FRIDRIX</div>
+                    <img src="img/mascot.svg" alt="Mascot" class="mascot-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters" id="work">
+        <div class="filter-wrapper">
+            <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="web">WEB-разработка</button>
+            <button class="filter-btn" data-filter="motion">МОУШН-ДИЗАЙН</button>
+            <button class="filter-btn" data-filter="graphic">ГРАФИЧЕСКИЙ ДИЗАЙН</button>
+            <button class="filter-btn" data-filter="music">МУЗЫКА</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects">
+        <div class="projects-wrapper">
+            <div class="projects-container">
+            <!-- WEB Projects -->
+            <a href="product.html?id=9" class="project-card-link">
+                <article class="project-card" data-category="web">
+                    <div class="project-image" style="background-image: url('img/inno.png'); background-size: contain; background-position: center;">
+                        <div class="project-overlay">
+                            <span class="project-category">WEB-разработка</span>
+                            <h3 class="project-title">INNNOWHITE</h3>
+                            <p class="project-description">Сайт для производителя отбеливающей косметики. Работа от варфрейма до полноценного продукта с кросс-платформенной адаптацией</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="product.html?id=10" class="project-card-link">
+                <article class="project-card" data-category="web">
+                    <div class="project-image" style="background-image: url('img/beat.png'); background-size: contain; background-position: center;">
+                        <div class="project-overlay">
+                            <span class="project-category">WEB-разработка</span>
+                            <h3 class="project-title">BEATFOUND</h3>
+                            <p class="project-description">Веб-приложение дистрибьютора для продвижения треков и обнаружения совпадений в битах. Работа от варфрейма до полноценного продукта</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="product.html?id=11" class="project-card-link">
+                <article class="project-card" data-category="web">
+                    <div class="project-image" style="background-image: url('img/giga1.png'); background-size: contain; background-position: center;">
+                        <div class="project-overlay">
+                            <span class="project-category">WEB-разработка</span>
+                            <h3 class="project-title">ГИГАПИН</h3>
+                            <p class="project-description">Образовательное приложение с системой рейтинга и геймификацией. 2 место на хакатоне кафедры ЦИАТ</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Motion Design Projects -->
+            <a href="product.html?id=12" class="project-card-link">
+                <article class="project-card" data-category="motion">
+                    <div class="project-video-container">
+                        <div class="vimeo-wrapper">
+                            <iframe 
+                                src="https://player.vimeo.com/video/1151519805?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&muted=1&autoplay=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                class="vimeo-player"
+                                data-vimeo-id="1151519805"
+                                title="МОУШН ДИЗАЙН с интерактивом для LayerZero">
+                            </iframe>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">МОУШН-ДИЗАЙН</span>
+                            <h3 class="project-title">LAYERZERO МОУШН-ИНТЕРВЬЮ</h3>
+                            <p class="project-description">Интервью‑шоу анимация для компании LayerZero, оформленный в минималистичном моушн‑дизайне с интерактивными элементами</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="product.html?id=13" class="project-card-link">
+                <article class="project-card" data-category="motion">
+                    <div class="project-video-container">
+                        <video class="project-video" muted loop playsinline>
+                            <source src="" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="project-overlay">
+                            <span class="project-category">МОУШН-ДИЗАЙН</span>
+                            <h3 class="project-title">Проект 2</h3>
+                            <p class="project-description">Описание проекта моушн-дизайна</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="product.html?id=14" class="project-card-link">
+                <article class="project-card" data-category="motion">
+                    <div class="project-video-container">
+                        <video class="project-video" muted loop playsinline>
+                            <source src="" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="project-overlay">
+                            <span class="project-category">МОУШН-ДИЗАЙН</span>
+                            <h3 class="project-title">Проект 3</h3>
+                            <p class="project-description">Описание проекта моушн-дизайна</p>
+                            <span class="project-link">Подробнее →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">О себе</h2>
+                <p class="about-text">
+                    Я FRIDRIX — дизайнер, который работает на стыке графики, веб‑дизайна, моушн‑дизайна и музыки. 
+                    Мне важно, чтобы каждый проект был не просто красивым, а решал задачу: помогал продукту расти, 
+                    бренду — становиться узнаваемым, а пользователю — чувствовать себя уверенно и свободно внутри интерфейса.
+                </p>
+                <div class="skills">
+                    <div class="skill-item">Figma</div>
+                    <div class="skill-item">HTML/CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">After Effects</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">Photoshop</div>
+                    <div class="skill-item">Illustrator</div>
+                    <div class="skill-item">Premiere Pro</div>
+                    <div class="skill-item">FL Studio</div>
+                </div>
+                
+                <h3 class="ai-section-title">AI Инструменты</h3>
+                <div class="skills ai-skills">
+                    <div class="skill-item">Cursor</div>
+                    <div class="skill-item">GPT</div>
+                    <div class="skill-item">API</div>
+                    <div class="skill-item">Stable Diffusion</div>
+                    <div class="skill-item">Midjourney</div>
+                    <div class="skill-item">ReCraft</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-container">
+            <div class="pricing-intro-header">
+                <h2 class="section-title">Услуги</h2>
+                <p class="pricing-subtitle">Комплексные решения для цифровых продуктов</p>
+            </div>
+            
+            <!-- Card 1: Продуктовый аудит -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h2 class="pricing-card-title">Продуктовый аудит и визуальная концепция</h2>
+                    <div class="pricing-card-time">7–10 дней</div>
+                </div>
+                <div class="pricing-card-price">
+                    <span class="price-amount">60 000–90 000</span>
+                    <span class="price-currency">₽</span>
+                </div>
+                <div class="pricing-card-description">
+                    Полный продуктовый аудит и разработка визуальной концепции
+                </div>
+                <div class="pricing-card-features">
+                    <h3 class="features-title">Услуга включает:</h3>
+                    <ul class="features-list">
+                        <li>Исследование продукта: цели, ключевые метрики, контекст рынка и ограничения</li>
+                        <li>Анализ конкурентов и аналогов по структуре, UX и визуальной коммуникации</li>
+                        <li>Анализ целевой аудитории: сегментация, мотивация, сценарии использования</li>
+                        <li>Разработка стилистического гида: референсы, принципы визуального стиля, палитра, типографика</li>
+                        <li>Визуализация целевого результата: предварительные визуальные решения и moodboard</li>
+                        <li>Проектирование Task Flow и AppMap для ключевых сценариев продукта</li>
+                        <li>Построение Customer Journey Map для основных пользовательских путей</li>
+                    </ul>
+                </div>
+                <div class="pricing-card-result">
+                    <strong>Результат:</strong> структурированный отчёт (PDF/Notion) с приоритизированными рекомендациями и визуальной концепцией продукта
+                </div>
+            </div>
+
+            <!-- Card 2: Комплексная проработка -->
+            <div class="pricing-card pricing-card-featured">
+                <div class="pricing-card-badge">Популярно</div>
+                <div class="pricing-card-header">
+                    <h2 class="pricing-card-title">Комплексная проработка продукта: исследование, дизайн, вёрстка</h2>
+                    <div class="pricing-card-time">14–21 день</div>
+                </div>
+                <div class="pricing-card-price">
+                    <span class="price-amount">140 000–180 000</span>
+                    <span class="price-currency">₽</span>
+                </div>
+                <div class="pricing-card-description">
+                    Комплексная проработка цифрового продукта от исследования до работающего интерфейса
+                </div>
+                <div class="pricing-card-features">
+                    <h3 class="features-title">Услуга включает:</h3>
+                    <ul class="features-list">
+                        <li>Базовый продуктовый аудит и анализ целевой аудитории</li>
+                        <li>Проектирование: прототипы основных экранов/страниц, Task Flow, AppMap, CJM</li>
+                        <li>Разработка пользовательского интерфейса (UI) с базовой дизайн‑системой</li>
+                        <li>Адаптивная вёрстка и сборка: корректное отображение на ключевых устройствах</li>
+                    </ul>
+                </div>
+                <div class="pricing-card-result">
+                    <strong>Результат:</strong> готовый к использованию цифровой продукт (лендинг, сайт или интерфейс) и базовый комплект документации по дизайну
+                </div>
+            </div>
+
+            <!-- Card 3: UX/продуктовый аудит -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h2 class="pricing-card-title">UX/продуктовый аудит существующего решения</h2>
+                    <div class="pricing-card-time">5–7 дней</div>
+                </div>
+                <div class="pricing-card-price">
+                    <span class="price-amount">40 000–70 000</span>
+                    <span class="price-currency">₽</span>
+                </div>
+                <div class="pricing-card-description">
+                    UX/продуктовый аудит действующего продукта
+                </div>
+                <div class="pricing-card-features">
+                    <h3 class="features-title">Услуга включает:</h3>
+                    <ul class="features-list">
+                        <li>Анализ текущего интерфейса и пользовательских сценариев</li>
+                        <li>Выявление узких мест и точек потерь в воронке</li>
+                        <li>Построение пользовательских потоков и ключевых CJM</li>
+                        <li>Сравнительный анализ с рыночными аналогами</li>
+                        <li>Формирование перечня рекомендаций с приоритизацией по влиянию на продукт</li>
+                    </ul>
+                </div>
+                <div class="pricing-card-result">
+                    <strong>Результат:</strong> отчёт с перечнем проблемных зон и планом доработок
+                </div>
+            </div>
+
+            <!-- Card 4: Лендинг для запуска -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h2 class="pricing-card-title">Лендинг для запуска</h2>
+                    <div class="pricing-card-time">5–7 дней</div>
+                </div>
+                <div class="pricing-card-price">
+                    <span class="price-amount">70 000–90 000</span>
+                    <span class="price-currency">₽</span>
+                </div>
+                <div class="pricing-card-description">
+                    Разработка лендинга для запуска продукта
+                </div>
+                <div class="pricing-card-features">
+                    <h3 class="features-title">Услуга включает:</h3>
+                    <ul class="features-list">
+                        <li>Формирование структуры и прототипа лендинга</li>
+                        <li>Разработка визуального решения с учётом ниши и задач</li>
+                        <li>Адаптивная вёрстка и базовая анимация</li>
+                        <li>Подключение форм обратной связи и мессенджеров (по согласованию)</li>
+                    </ul>
+                </div>
+                <div class="pricing-card-result">
+                    <strong>Результат:</strong> лендинг, готовый к запуску рекламного трафика
+                </div>
+            </div>
+
+            <!-- Card 5: Моушн-дизайн -->
+            <div class="pricing-card pricing-card-hourly">
+                <div class="pricing-card-header">
+                    <h2 class="pricing-card-title">Моушн‑дизайн</h2>
+                    <div class="pricing-card-time">Почасовая модель</div>
+                </div>
+                <div class="pricing-card-price">
+                    <span class="price-amount">2 500</span>
+                    <span class="price-currency">₽/час</span>
+                </div>
+                <div class="pricing-card-description">
+                    Моушн‑дизайн для цифровых продуктов и контента
+                </div>
+                <div class="pricing-card-features">
+                    <h3 class="features-title">Услуга включает:</h3>
+                    <ul class="features-list">
+                        <li>Разработку микроанимаций интерфейса</li>
+                        <li>Подготовку анимированных материалов для презентаций и промо</li>
+                        <li>Создание коротких анимационных роликов для социальных сетей и промо‑кампаний</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-links">
+                <a href="mailto:hello@portfolio.com" class="contact-link">Email</a>
+                <a href="#" class="contact-link">Behance</a>
+                <a href="#" class="contact-link">Dribbble</a>
+                <a href="#" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 FRIDRIX. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

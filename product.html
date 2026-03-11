@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект — FRIDRIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FRIDRIX</a>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">Работы</a>
+                <a href="about.html" class="nav-link">О себе</a>
+                <a href="pricing.html" class="nav-link">Услуги</a>
+                <a href="index.html#contact" class="nav-link">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Header -->
+    <section class="product-header">
+        <div class="product-header-container">
+            <a href="index.html" class="back-link">← Назад</a>
+            <div class="product-meta">
+                <span class="product-category-badge" id="productCategory">UX/UI</span>
+                <h1 class="product-title" id="productTitle">Название проекта</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Hero Image -->
+    <section class="product-hero">
+        <div class="product-hero-image" id="productHeroImage"></div>
+    </section>
+
+    <!-- Product Content -->
+    <section class="product-content">
+        <div class="product-content-container">
+            <div class="product-info">
+                <div class="product-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Клиент</span>
+                        <span class="detail-value" id="productClient">Название компании</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Год</span>
+                        <span class="detail-value" id="productYear">2024</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Роль</span>
+                        <span class="detail-value" id="productRole">Дизайнер / Разработчик</span>
+                    </div>
+                    <div class="detail-item" id="productLinkContainer" style="display: none;">
+                        <a href="" target="_blank" rel="noopener noreferrer" id="productLink" class="detail-link">Посмотреть сайт →</a>
+                    </div>
+                </div>
+                <div class="product-description-full">
+                    <h2>О проекте</h2>
+                    <p id="productDescription">
+                        Подробное описание проекта будет здесь.
+                    </p>
+                    <h2>Задачи</h2>
+                    <ul id="productTasks">
+                        <li>Задача проекта</li>
+                    </ul>
+                    <h2>Решение</h2>
+                    <p id="productSolution">
+                        Описание решения и подхода к проекту.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="product-gallery" id="productGallery">
+        <div class="product-gallery-container" id="galleryContainer">
+            <!-- Gallery items will be inserted here by JavaScript -->
+        </div>
+        <!-- Slider for projects with multiple images -->
+        <div class="product-slider" id="productSlider" style="display: none;">
+            <div class="slider-container">
+                <button class="slider-btn slider-prev" id="sliderPrev">←</button>
+                <div class="slider-viewport">
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- Slider items will be inserted here -->
+                    </div>
+                </div>
+                <button class="slider-btn slider-next" id="sliderNext">→</button>
+            </div>
+            <div class="slider-dots" id="sliderDots">
+                <!-- Dots will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <div class="next-project-container">
+            <a href="index.html" class="next-project-link">
+                <span>Следующий проект</span>
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 FRIDRIX. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
+
